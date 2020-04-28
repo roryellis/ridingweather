@@ -41,7 +41,8 @@ function RideViews(props) {
         };
 
         useEffect(() => {
-            getWeather();
+			getWeather();
+			//eslint-disable-next-line
         }, [])
     if (forecast.current === undefined) {
         return (
