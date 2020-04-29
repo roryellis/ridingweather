@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { Route } from 'react-router-dom';
 import RideViews from './RideViews/RideViews';
 import AppHeader from './AppHeader/AppHeader';
-import Location from './Location/Location';
 import './App.css';
 
 function App() {
@@ -21,11 +19,17 @@ function App() {
 		}
 	}
 
-	return <div className='App'>
-		<AppHeader />
-		<Location getLocation={getLocation} userLat={userLat} userLon={userLon}/>
-		{userLat && userLon && <RideViews userLat={userLat} userLon={userLon} />}
-	</div>
+	return (
+		<div className='App'>
+			<AppHeader
+				getLocation={getLocation}
+				userLat={userLat}
+				userLon={userLon}
+			/>
+			
+			{userLat && userLon && <RideViews userLat={userLat} userLon={userLon} />}
+		</div>
+	);
 }
 
 export default App;

@@ -1,0 +1,7 @@
+.app-logo {
+    height: 10vh
+}
+
+.app-logo-container {
+    grid-column: 1, span 2;
+}
