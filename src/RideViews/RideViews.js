@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import RideSoon from '../RideSoon/RideSoon';
 import RideLater from '../RideLater/RideLater';
 import RideThisWeek from '../RideThisWeek/RideThisWeek';
+import CurrentWeather from '../CurrentWeather/CurrentWeather';
 
 function RideViews(props) {
     const [forecast, setForecast] = useState({});
@@ -36,6 +37,12 @@ function RideViews(props) {
         return (
 					<div className='ride-views'>
 						<Route
+							path='/' exact
+							render={() => {
+								return <CurrentWeather current={forecast.current} />;
+							}}
+						/>
+						<Route
 							path='/ridesoon'
 							render={() => {
 								return <RideSoon hourlyForecast={forecast.hourly} />;
@@ -50,7 +57,7 @@ function RideViews(props) {
 						<Route
 							path='/ridethisweek'
 							render={() => {
-								return<RideThisWeek />;
+								return <RideThisWeek dailyForecast={forecast.daily} />;
 							}}
 						/>
 					</div>

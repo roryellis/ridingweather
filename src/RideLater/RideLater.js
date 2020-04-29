@@ -20,8 +20,8 @@ function RideLater(props) {
 } 
 
 	return (
-		<section className='ride-soon'>
-			<h2>Ride Soon</h2>
+		<section className='ride-later'>
+			<h2>Ride Later</h2>
 			<HourlyForecast hourlyForecast={fortyEightHourForecast} />
 		</section>
 	);

@@ -6,7 +6,6 @@ function HourlyForecast(props) {
 			<tr key={shortRecord.key}>
 				<td>{shortRecord.dt}</td>
 				<td>{shortRecord.feels_like}&deg;F</td>
-				<td>{shortRecord.temp}&deg;F</td>
 				<td>{shortRecord.weather[0].description}</td>
 			</tr>
 		);
@@ -18,7 +17,6 @@ function HourlyForecast(props) {
 					<tr>
 						<td>Hour</td>
 						<td>Feels Like</td>
-						<td>Temp</td>
 						<td>Description</td>
 					</tr>
 				</thead>
