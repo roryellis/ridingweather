@@ -4,6 +4,7 @@ import RideSoon from '../RideSoon/RideSoon';
 import RideLater from '../RideLater/RideLater';
 import RideThisWeek from '../RideThisWeek/RideThisWeek';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
+import './RideViews.css';
 
 function RideViews(props) {
     const [forecast, setForecast] = useState({});

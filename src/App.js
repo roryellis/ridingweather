@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import RideViews from './RideViews/RideViews';
 import AppHeader from './AppHeader/AppHeader';
+import LocationButton from './LocationButton/LocationButton';
 import './App.css';
 
 function App() {
@@ -26,7 +27,17 @@ function App() {
 				userLat={userLat}
 				userLon={userLon}
 			/>
-			
+			{!userLat && !userLon && (
+				<h3 className="need-location">
+					Riding Weather needs access to your location to get local weather
+					data.
+				</h3>
+			)}
+			<LocationButton
+				getLocation={getLocation}
+				userLat={userLat}
+				userLon={userLon}
+			/>
 			{userLat && userLon && <RideViews userLat={userLat} userLon={userLon} />}
 		</div>
 	);

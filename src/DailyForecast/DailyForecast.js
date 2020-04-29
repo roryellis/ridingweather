@@ -5,9 +5,15 @@ function DailyForecast(props) {
 		return (
 			<tr key={shortRecord.key}>
 				<td>{shortRecord.dt}</td>
-				<td>{shortRecord.feels_like.morn}&deg;F</td>
-				<td>{shortRecord.feels_like.day}&deg;F</td>
-				<td>{shortRecord.feels_like.night}&deg;F</td>
+				<td className={shortRecord.feels_like.morn >= 60 ? 'green' : ''}>
+					{shortRecord.feels_like.morn}&deg;F
+				</td>
+				<td className={shortRecord.feels_like.day >= 60 ? 'green' : ''}>
+					{shortRecord.feels_like.day}&deg;F
+				</td>
+				<td className={shortRecord.feels_like.night >= 60 ? 'green' : ''}>
+					{shortRecord.feels_like.night}&deg;F
+				</td>
 				<td>{shortRecord.weather[0].description}</td>
 			</tr>
 		);
@@ -18,7 +24,7 @@ function DailyForecast(props) {
 				<thead>
 					<tr>
 						<td></td>
-						<td colSpan="3">Feels Like</td>
+						<td colSpan='3'>Feels Like</td>
 						<td></td>
 					</tr>
 					<tr>

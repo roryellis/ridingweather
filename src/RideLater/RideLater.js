@@ -8,7 +8,7 @@ function RideLater(props) {
 		const shortForecast = props.hourlyForecast.map((fullRecord) => {
 			const shortRecord = {
 				key: fullRecord.dt,
-				dt: moment.unix(fullRecord.dt).format('LT'),
+				dt: moment.unix(fullRecord.dt).calendar(),
 				feels_like: fullRecord.feels_like,
 				temp: fullRecord.temp,
 				weather: fullRecord.weather,
