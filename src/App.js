@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import RideViews from './RideViews/RideViews';
-import AppHeader from './AppHeader/AppHeader';
-import LocationButton from './LocationButton/LocationButton';
+import RideViews from './components/RideViews/RideViews';
+import AppHeader from './components/AppHeader/AppHeader';
+import LocationButton from './components/LocationButton/LocationButton';
 import './App.css';
 
 function App() {
