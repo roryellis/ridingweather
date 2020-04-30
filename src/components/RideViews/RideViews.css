@@ -1,10 +1,15 @@
 .ride-views table {
     margin: 0 auto;
+    width: 100%;
 }
 
 .ride-views td {
     border-radius: 10px;
     padding: 0 5px;
+}
+
+.ride-views tr {
+    max-width: 100%;
 }
 
 .green {
@@ -16,4 +21,5 @@
     padding: 5vh 0;
     margin: 1vh 0;
     min-height: 50vh;
+    width: 100%;
 }
