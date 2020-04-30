@@ -22,22 +22,20 @@ function App() {
 
 	return (
 		<div className='App'>
-			<AppHeader
-				getLocation={getLocation}
-				userLat={userLat}
-				userLon={userLon}
-			/>
+			<AppHeader />
 			{!userLat && !userLon && (
-				<h3 className="need-location">
+				<h1 className='need-location'>
 					Riding Weather needs access to your location to get local weather
 					data.
-				</h3>
+				</h1>
 			)}
-			<LocationButton
-				getLocation={getLocation}
-				userLat={userLat}
-				userLon={userLon}
-			/>
+			{!userLat && !userLon && (
+				<LocationButton
+					getLocation={getLocation}
+					userLat={userLat}
+					userLon={userLon}
+				/>
+			)}
 			{userLat && userLon && <RideViews userLat={userLat} userLon={userLon} />}
 		</div>
 	);

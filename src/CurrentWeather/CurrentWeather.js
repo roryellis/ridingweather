@@ -16,6 +16,7 @@ function CurrentWeather(props) {
 						props.current.weather[0].description.slice(1)}
 				</li>
 			</ul>
+            {props.current.feels_like >= 60 && <h1 className='ride-message'>Go Ride!</h1>}
 		</section>
 	);
 }

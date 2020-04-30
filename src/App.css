@@ -6,3 +6,8 @@
   background-attachment: fixed;
   height: 100vh;
 }
+
+.need-location {
+  font-weight: bolder;
+  margin: 10vw;
+}
