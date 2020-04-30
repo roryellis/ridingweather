@@ -1,3 +1,7 @@
 .current-weather li {
     list-style: none;
 }
+
+.current-weather ul {
+    padding: 0;
+}

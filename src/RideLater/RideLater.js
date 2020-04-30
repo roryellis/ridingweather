@@ -4,7 +4,7 @@ import HourlyForecast from '../HourlyForecast/HourlyForecast';
 
 function RideLater(props) {
 	const fortyEightHourForecast = [];
-	for(let i = 0; i <= 47; i++) {
+	for(let i = 0; i <= 47; i += 3) {
 		const shortForecast = props.hourlyForecast.map((fullRecord) => {
 			const shortRecord = {
 				key: fullRecord.dt,

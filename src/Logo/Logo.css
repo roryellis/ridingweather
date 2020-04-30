@@ -1,5 +1,6 @@
 .app-logo {
-    height: 10vh
+    height: 20vh;
+    max-width: 80vw;
 }
 
 .app-logo-container {

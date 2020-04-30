@@ -2,6 +2,16 @@
     margin: 0 auto;
 }
 
+.ride-views td {
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
 .green {
     background-color: rgb(0, 248, 0);
+}
+
+.ride-views {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 5vh 0;
 }

@@ -9,7 +9,7 @@ function CurrentWeather(props) {
 		<section className='current-weather'>
 			<h2>Current Conditions</h2>
 			<ul>
-				<li>As of: {moment(props.current.dt).format('LT')}</li>
+				<li>As of: {moment.unix(props.current.dt).format('LT')}</li>
 				<li>Feels Like: {props.current.feels_like}&deg;F</li>
 				<li>
 					{props.current.weather[0].description.charAt(0).toUpperCase() +

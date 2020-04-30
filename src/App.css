@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url("/background-road.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
 }
-
-

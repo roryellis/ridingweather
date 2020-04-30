@@ -12,7 +12,7 @@ function Navigation() {
 				Ride Later
 			</Link>
 			<Link to='/ridethisweek' className='nav-link'>
-				Ride This Week
+				This Week
 			</Link>
 		</section>
 	);
