@@ -25,8 +25,7 @@ function App() {
 			<AppHeader />
 			{!userLat && !userLon && (
 				<h1 className='need-location'>
-					Riding Weather needs access to your location to get local weather
-					data.
+					Riding Weather needs access to your location to get local weather data.
 				</h1>
 			)}
 			{!userLat && !userLon && (
