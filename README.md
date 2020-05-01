@@ -1,12 +1,12 @@
 # Riding Weather
-![Riding Weather Logo](/logo-full.png)
+![Riding Weather Logo](https://raw.githubusercontent.com/roryellis/ridingweather/dev/public/logo-full.png)
 
 # Description
 
 General Assembly Software Engineering Immersive Remote - 323 - Project 2:
 Riding Weather is a web application allowing user submission of a location to check local weather conditions for the purpose of planning a motorcycle ride or other outdoor activity.
 
-<img src="/home-needlocation.png" alt="Need Location View"/>
+<img src="https://github.com/roryellis/ridingweather/blob/dev/public/home-needlocation.png?raw=true" alt="Need Location View"/>
 <img src="/home-currentweather.png" alt="Current Weather View"/>
 <img src="/ridesoon.png" alt="Ride Soon View"/>
 <img src="/ridelater.png" alt="Ride Later View"/>
