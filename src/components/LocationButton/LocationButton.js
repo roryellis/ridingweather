@@ -3,7 +3,7 @@ import './LocationButton.css';
 
 function LocationButton(props) {
 	return (
-		<button className='get-location-button' onClick={props.getLocation}>Get Location</button>
+		<button className='get-location-button' onClick={props.getLocation}>Get Your Current Location</button>
 	)
 }
 

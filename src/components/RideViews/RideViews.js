@@ -37,6 +37,7 @@ function RideViews(props) {
     } else {
         return (
 					<div className='ride-views'>
+						<p>{props.address}</p>
 						<Route
 							path='/' exact
 							render={() => {

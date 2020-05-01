@@ -3,7 +3,6 @@ import moment from 'moment';
 import './CurrentWeather.css';
 
 function CurrentWeather(props) {
-    console.log(props.current.dt)
 
 	return (
 		<section className='current-weather'>

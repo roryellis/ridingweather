@@ -4,10 +4,21 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .need-location {
-  font-weight: bolder;
+  font-weight: bold;
   margin: 10vw;
+}
+
+.location-options {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 5vh 0;
+  margin: 1vh 0;
+  min-height: 50vh;
+  width: 100%;
+}
+.location-options p {
+  font-weight: bold;
 }
