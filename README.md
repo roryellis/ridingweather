@@ -1,5 +1,5 @@
 # Riding Weather
-![Riding Weather Logo](logo-full.png)
+![Riding Weather Logo](/logo-full.png)
 
 # Description
 
