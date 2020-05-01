@@ -6,11 +6,7 @@
 General Assembly Software Engineering Immersive Remote - 323 - Project 2:
 Riding Weather is a web application allowing user submission of a location to check local weather conditions for the purpose of planning a motorcycle ride or other outdoor activity.
 
-<img src="https://github.com/roryellis/ridingweather/blob/dev/public/home-needlocation.png?raw=true" alt="Need Location View" width="200"/>
-<img src="https://github.com/roryellis/ridingweather/blob/dev/public/home-currentweather.png?raw=true" alt="Current Weather View" width="200"/>
-<img src="https://github.com/roryellis/ridingweather/blob/dev/public/ridesoon.png?raw=true" alt="Ride Soon View" width="200"/>
-<img src="https://github.com/roryellis/ridingweather/blob/dev/public/ridelater.png?raw=true" alt="Ride Later View" width="200"/>
-<img src="https://github.com/roryellis/ridingweather/blob/dev/public/ridethisweek.png?raw=true" alt="Ride This Week View" width="200"/>
+<img src="https://github.com/roryellis/ridingweather/blob/dev/public/home-needlocation.png?raw=true" alt="Need Location View" width="200"/><img src="https://github.com/roryellis/ridingweather/blob/dev/public/home-currentweather.png?raw=true" alt="Current Weather View" width="200"/><img src="https://github.com/roryellis/ridingweather/blob/dev/public/ridesoon.png?raw=true" alt="Ride Soon View" width="200"/><img src="https://github.com/roryellis/ridingweather/blob/dev/public/ridelater.png?raw=true" alt="Ride Later View" width="200"/><img src="https://github.com/roryellis/ridingweather/blob/dev/public/ridethisweek.png?raw=true" alt="Ride This Week View" width="200"/>
 
 # Deployed Application
 
