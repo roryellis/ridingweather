@@ -1,17 +1,35 @@
 import React from 'react';
 
 function DailyForecast(props) {
+	console.log(props.dailyForecast)
 	const forecastTableContent = props.dailyForecast.map((shortRecord) => {
 		return (
 			<tr key={shortRecord.key}>
 				<td>{shortRecord.dt}</td>
-				<td className={shortRecord.feels_like.morn >= 60 ? 'green' : ''}>
+				<td
+					className={
+						shortRecord.feels_like.morn >= 60 &&
+						shortRecord.weather[0].id >= 800
+							? 'green'
+							: ''
+					}>
 					{shortRecord.feels_like.morn}&deg;F
 				</td>
-				<td className={shortRecord.feels_like.day >= 60 ? 'green' : ''}>
+				<td
+					className={
+						shortRecord.feels_like.day >= 60 && shortRecord.weather[0].id >= 800
+							? 'green'
+							: ''
+					}>
 					{shortRecord.feels_like.day}&deg;F
 				</td>
-				<td className={shortRecord.feels_like.night >= 60 ? 'green' : ''}>
+				<td
+					className={
+						shortRecord.feels_like.night >= 60 &&
+						shortRecord.weather[0].id >= 800
+							? 'green'
+							: ''
+					}>
 					{shortRecord.feels_like.night}&deg;F
 				</td>
 			</tr>

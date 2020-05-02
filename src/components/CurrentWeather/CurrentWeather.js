@@ -3,6 +3,7 @@ import moment from 'moment';
 import './CurrentWeather.css';
 
 function CurrentWeather(props) {
+	console.log(props.current)
 
 	return (
 		<section className='current-weather'>
@@ -15,7 +16,7 @@ function CurrentWeather(props) {
 						props.current.weather[0].description.slice(1)}
 				</li>
 			</ul>
-            {props.current.feels_like >= 60 && <h1 className='ride-message'>Go Ride!</h1>}
+            {props.current.feels_like >= 65 && props.current.weather[0].id >= 800 && <h1 className='ride-message'>Go Ride!</h1>}
 		</section>
 	);
 }
