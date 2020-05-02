@@ -1,7 +1,6 @@
 import React from 'react';
 
 function DailyForecast(props) {
-	console.log(props.dailyForecast)
 	const forecastTableContent = props.dailyForecast.map((shortRecord) => {
 		return (
 			<tr key={shortRecord.key}>
