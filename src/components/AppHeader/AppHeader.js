@@ -3,7 +3,9 @@ import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 import './AppHeader.css';
 
-function AppHeader(props) {
+//
+
+function AppHeader() {
     return (
 			<section className='app-header'>
 				<Logo />

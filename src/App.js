@@ -34,8 +34,6 @@ function App() {
 					</h1>
 					<LocationButton
 						getLocation={getLocation}
-						userLat={userLat}
-						userLon={userLon}
 					/>
 					<p>
 						Or <br /> Search for an address below
